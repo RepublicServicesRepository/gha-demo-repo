@@ -1,0 +1,22 @@
+{
+  "name": "gha-demo-repo",
+  "version": "1.0.0",
+  "description": "A simple node application to demo GitHub Actions",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RepublicServicesRepository/gha-demo-repo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RepublicServicesRepository/gha-demo-repo/issues"
+  },
+  "homepage": "https://github.com/RepublicServicesRepository/gha-demo-repo#readme",
+  "devDependencies": {
+    "jest": "^27.4.7"
+  }
+}
