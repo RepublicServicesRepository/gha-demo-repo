@@ -9,5 +9,5 @@ test('Logs correct message', () => {
   
   //assert
   expect(console.log)
-    .toHaveBeenCalledWith('Hello World!');
+    .toHaveBeenCalledWith('Hello World!=');
 });
