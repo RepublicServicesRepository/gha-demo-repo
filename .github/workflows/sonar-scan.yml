@@ -1,14 +1,15 @@
-name: Build
-on: [push, pull_request]
+name: Sonar Scan
+on: pull_request
 
 jobs:
-  build:
-    name: Build
+  Scan:
+    name: scan
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
         with:
           fetch-depth: 0
+
       - name: SonarCloud Scan
         uses: sonarsource/sonarqube-scan-action@master
         env:
@@ -19,6 +20,7 @@ jobs:
           args: |
              -Dsonar.pullrequest.provider=github
              -Dsonar.projectKey=RepublicServicesRepository_gha-demo-repo
+             
       - name: SonarQube Quality Gate Check
         uses: sonarsource/sonarqube-quality-gate-action@master
         timeout-minutes: 5
