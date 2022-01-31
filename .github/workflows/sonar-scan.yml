@@ -1,9 +1,11 @@
-name: Build
-on: [push, pull_request]
+name: Sonar Scan
+on: 
+  push:
+  pull_request:
 
 jobs:
-  build:
-    name: Build
+  scan:
+    name: scan
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
