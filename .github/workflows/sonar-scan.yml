@@ -23,7 +23,7 @@ jobs:
           args: |
              -Dsonar.pullrequest.provider=github
              -Dsonar.projectKey=RepublicServicesRepository_gha-demo-repo
-     - name: SonarQube Quality Gate Check
+      - name: SonarQube Quality Gate Check
         uses: sonarsource/sonarqube-quality-gate-action@master
          # Force to fail step after specific time
         timeout-minutes: 5
