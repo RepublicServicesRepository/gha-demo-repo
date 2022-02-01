@@ -4,8 +4,8 @@ on:
   workflow_dispatch:
 
 jobs:
-  scan:
-    name: scan
+  sonar-scan:
+    name: sonar-scan
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
